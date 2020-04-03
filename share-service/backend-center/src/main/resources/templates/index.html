@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>个人主页</title>
+    <meta name="keywords" content=" "/>
+    <meta name="description" content=" "/>
+
+    <link rel='stylesheet' id='style-css' href='css/style.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='lmlblog-css' href='css/index.css' type='text/css' media='all'/>
+    <link rel='stylesheet' id='all-css' href='css/all.css' type='text/css' media='all'/>
+    <script type='text/javascript' src='js/jquery.min.js'></script>
+    <script type='text/javascript' src='js/jinsom.js'></script>
+    <script type='text/javascript' src='js/ueditor.all.min.js'></script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 菜单 -->
+<div class="menu-bar">
+    <div class="head_content">
+
+
+        <div class="head_user_info">
+            <ul>
+                <li id="head_login" onclick="#1">登录</li>
+                <span class="head_login_middle">or</span>
+                <li id="head_reg" onclick="#1">注册</li>
+            </ul>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div><!-- menu-bar -->
+<div style="clear: both;"></div>
+<div class="lmlblog-member-main" data="1">
+    <div class="" style="margin-top: 10px">
+
+
+        <div id="main">
+
+            <div class="lmlblog-posts-list words">
+
+                <div id="form_box">
+
+                    <h2>有什么新鲜事想告诉大家？</h2>
+
+                    <textarea id="comment" cols="30" rows="10"></textarea>
+
+                    <p>
+                        <span id="count"></span>
+                        <button id="send">发布</button>
+                    </p>
+
+
+                </div>
+                <div id="comment_box">
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="lmlblog-member-content">
+            <div class="lmlblog-member-content-list clear">
+
+                <div class="lmlblog-member-right">
+                    <div class="lmlblog-post-list">
+
+                        <div class="lmlblog-posts-list words">
+
+                            <!-- 动态内容部分，包括列表 -->
+                            <div class="lmlblog-post-user-info">
+
+
+                                <div class="lmlblog-post-user-info-avatar" user-data="1">
+
+                                    <a href="#1" style="display: inline-block;">
+
+                                        <span class="lmlblog-vip-icon"></span>
+                                        <!--头像地址-->
+                                        <img src="images/tx2.jpg" class="avatar"/>
+                                    </a>
+                                </div>
+
+
+                                <div class="lmlblog-post-user-info-name">
+                                    <a href="#1">
+                                        <font style="color:#333;font-weight:600">司空琪2</font>
+                                    </a>
+
+                                </div>
+                                <div class="lmlblog-post-user-info-time" title="2017-12-14 05:25">12-14 05:25</div>
+                            </div>
+
+                            <!-- 作者信息 -->
+                            <div class="lmlblog-post-setting">
+                                <i class="fa fa-angle-down"></i>
+                                <div class="lmlblog-post-setting-box">
+                                    <ul>
+                                        <a href="#" title="查看全文">
+                                            <li>查看全文</li>
+                                        </a>
+                                        <a href="#1" title="访问主页">
+                                            <li>访问主页</li>
+                                        </a>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="lmlblog-post-content ">
+                                <a class="post_list_link" href="#">
+                                    <P>
+                                        　　疏星淡月，紫陌曲岸，持觞游赏，神移长川。一片彀纹，溶溶泄泄，忽而烟靡云敛。睹一丽人，缦立青水，云蒸雾霭，花衬善睐。荧荧兮若北辰之荣现，扰扰兮若紫玉之生烟。颜如舜华，迫闻素腰华琚摇;和颜静志，远望渌水呈雾绡。戏流光之夜蝶，采舞雪之琼花，流眷眷之眸光，润荣曜之笑靥。</P>
+                                    <P>　　偶得美人回顾，思之朝朝暮暮。采芝兰以明愫，寄琼琚以作妆。余咏永慕叹道长，彼应影独愿偕芳。才知世有解语，不过琪语溯光。<img
+                                            src="images/66.png" alt="[s-65]" class="wp-smiley"/>
+                                        <img src="images/8.png" alt="[s-65]" class="wp-smiley"/></P>
+                                </a>
+                            </div>
+
+
+                            <div class="lmlblog-post-bar">
+                                <li class="lmlblog-no-like" onclick='lmlblog_like_posts(4197,this,"post");'>
+                                    <i class="lmlblog-icon">点赞</i> <span>5</span>
+                                </li>
+                                <li onclick='list_comments_show(this);'>
+                                    <i class="lmlblog-icon">评论</i> <span>5123</span>
+                                </li>
+                            </div>
+
+                            <div class="lmlblog-post-like-list">
+                                <a href="#17" id="had_like_11788">
+                                    <img src="picture/11.gif" class="avatar"/></a>
+                                <a href="#18" id="had_like_11499"><img src="picture/12.gif" class="avatar"/></a>
+                                <a href="#22" id="had_like_11488"><img src="picture/20.png" class="avatar"/>
+                                    <i class="lmlblog-verify lmlblog-verify-a" title="认证信息：作者许仙白"></i></a><a href="#22"
+                                                                                                             id="had_like_11477">
+                                <img src="picture/13.gif" class="avatar"/>
+                                <i class="lmlblog-verify lmlblog-verify-a" title="认证信息：168号计师"></i></a><a href="#22"
+                                                                                                          id="had_like_1">
+                                <img src="images/tx2.jpg" class="avatar"/>
+                                <i class="lmlblog-verify lmlblog-verify-a" title="司空琪"></i></a>
+                            </div>
+
+                            <div class="lmlblog-post-footer-comments" style="display: none">
+
+                                <!--评论开始-->
+                                <ul>
+                                    <li class="comments">
+                                        <div class="lmlblog-post-user-info-avatar-comments" user-data="1">
+
+                                            <a href="#1" style="display: inline-block;">
+
+                                                <span class="lmlblog-vip-icon"></span>
+                                                <!--头像地址-->
+                                                <img src="images/tx2.jpg" class="avatar" />
+                                            </a>
+                                        </div>
+                                        <div class="lmlblog-post-user-info-name">
+                                            <a href="#1">
+                                                <font style="color:#333;font-weight:600">司空琪</font>
+                                            </a>
+
+                                            <div class="liuyan">
+                                                <P>
+                                                    天王盖地虎.
+                                                </P>
+                                            </div>
+
+                                        </div>
+                                        <div class="lmlblog-post-user-info-time" title="2017-12-14 05:25">12-14 05:25
+                                        </div>
+
+                                    </li>
+
+                                    <li class="comments">
+                                        <div class="lmlblog-post-user-info-avatar-comments" user-data="1">
+
+                                            <a href="#1" style="display: inline-block;">
+
+                                                <span class="lmlblog-vip-icon"></span>
+                                                <!--头像地址-->
+                                                <img src="images/tx2.jpg" class="avatar" />
+                                            </a>
+                                        </div>
+                                        <div class="lmlblog-post-user-info-name">
+                                            <a href="#1">
+                                                <font style="color:#333;font-weight:600">司空琪</font>
+                                            </a>
+
+                                            <div class="liuyan">
+                                                <P>
+                                                   看懂动,让三楼看看怎么.
+                                                </P>
+                                            </div>
+
+                                        </div>
+                                        <div class="lmlblog-post-user-info-time" title="2017-12-14 05:25">12-14 05:25
+                                        </div>
+
+                                    </li>
+
+                                    <li class="comments">
+                                        <div class="lmlblog-post-user-info-avatar-comments" user-data="1">
+
+                                            <a href="#1" style="display: inline-block;">
+
+                                                <span class="lmlblog-vip-icon"></span>
+                                                <!--头像地址-->
+                                                <img src="images/tx2.jpg" class="avatar" />
+                                            </a>
+                                        </div>
+                                        <div class="lmlblog-post-user-info-name">
+                                            <a href="#1">
+                                                <font style="color:#333;font-weight:600">司空琪</font>
+                                            </a>
+
+                                            <div class="liuyan">
+                                                <P>
+                                                  小伙子文章写的不错啊?
+                                                </P>
+                                            </div>
+
+                                        </div>
+                                        <div class="lmlblog-post-user-info-time" title="2017-12-14 05:25">12-14 05:25
+                                        </div>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                        </div><!-- posts_list -->
+
+
+                        <div class="lmlblog-pager"><a class="lmlblog-pager-left" href="#2">上一页</a>
+                            <div class="lmlblog-pager-center layui-form">
+                                第 1 页
+                            </div>
+                            <a class="lmlblog-pager-right" href="#3">下一页</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部 -->
+<div style="clear:both"></div>
+
+<!-- 返回顶部 -->
+<a href="javascript:returnTop();" class="cd-top"></a>
+<script type="text/javascript">
+    var sdelay = 0;
+
+    function returnTop() {
+        window.scrollBy(0, -100);//Only for y vertical-axis
+        if (document.body.scrollTop > 0) {
+            sdelay = setTimeout('returnTop()', 50);
+        }
+    }
+</script>
+</body>
+<script type='text/javascript' src='js/base.js'></script>
+<script type='text/javascript' src='js/all.js'></script>
+<script type='text/javascript' src='js/plupload.full.min.js'></script>
+<script type='text/javascript' src='js/layui.js'></script>
+<script>
+
+
+
+
+    jQuery(document).ready(function ($) {
+        $.fn.smartFloat = function () {
+            var position = function (element) {
+                var top = element.position().top, pos = element.css("position");
+                $(window).scroll(function () {
+                    var scrolls = $(this).scrollTop();
+                    if (scrolls > top) {
+                        if (window.XMLHttpRequest) {
+                            element.css({
+                                position: "fixed",
+                                top: 0
+                            });
+                        } else {
+                            element.css({
+                                top: scrolls
+                            });
+                        }
+                    } else {
+                        element.css({
+                            position: "absolute",
+                            top: top
+                        });
+                    }
+                });
+            };
+            return $(this).each(function () {
+                position($(this));
+            });
+        };
+        $(".lmlblog-member-left-bg-xg").smartFloat();
+
+    });
+</script>
+</html>

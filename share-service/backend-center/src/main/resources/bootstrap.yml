@@ -1,0 +1,78 @@
+server:
+  port: 8200
+
+spring:
+  application:
+    name: backend-center
+  datasource:
+    url: jdbc:mysql://mysql.renrenphp.com:3306/ycl_backend?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 18911973249
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  redis:
+    host: mysql.renrenphp.com
+    port: 6379
+    password:
+    timeout: 10s
+    lettuce:
+      pool:
+        min-idle: 0
+        max-idle: 8
+        max-active: 8
+        max-wait: -1ms
+  mvc:
+    servlet:
+      load-on-startup: 1
+    aop:
+      proxy-target-class: true
+    zipkin:
+      base-url: http://localhost:9411
+      enabled: true
+      sender:
+        type: web
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  # 配置rabbitMq 服务器
+  rabbitmq:
+    host: 123.57.69.18
+    port: 5672
+    username: admin
+    password: admin
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    registry-fetch-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 15
+    lease-renewal-interval-in-seconds: 5
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
