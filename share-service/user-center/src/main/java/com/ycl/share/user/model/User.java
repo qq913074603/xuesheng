@@ -44,7 +44,7 @@ public class User implements Serializable {
     private String password;
 
     /**
-     * 头像url
+     *  头像url
      */
     @Column(name = "photo_url")
     private String photoUrl;
